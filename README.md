@@ -33,6 +33,23 @@ Change the list in `config.py` any time - `CATEGORIES`.
    confusion matrix heatmap, per-class F1 bar chart, real misclassified examples, and a
    textbox where you type any text and get a live prediction from the selected model.
 
+## Results (real run, 5 categories above)
+
+Train posts: 2,833 · Test posts: 1,886
+
+| Model | Accuracy | Macro F1 |
+|---|---|---|
+| Logistic Regression | 84.8% | 0.846 |
+| Multinomial Naive Bayes | **85.8%** | **0.856** |
+| Linear SVM | 84.2% | 0.839 |
+
+Naive Bayes won on this category set — a bit counterintuitive since Linear SVM usually edges out
+on high-dimensional sparse TF-IDF text, but with only ~570 posts per class and stop-word-only
+preprocessing (no bigrams, no hyperparameter tuning), Naive Bayes's simplicity works in its
+favor here. All three land within 1.6 points of each other, which itself is a legitimate
+finding: for this dataset/feature set, model choice matters less than the TF-IDF representation
+does.
+
 ## Run it
 
 ```bash
@@ -78,15 +95,15 @@ Artifacts `train.py` produces locally (gitignored, regenerate anytime by re-runn
   score.
 - An interactive dashboard, not just a static notebook.
 
-## Resume bullet (fill in real numbers after running `train.py`)
+## Resume bullet
 
 **News Topic Classification & Analytics Dashboard** &mdash; Python, Scikit-learn, TF-IDF, Streamlit
 
-Built an NLP text-classification pipeline on the 20 Newsgroups dataset using TF-IDF features;
-trained and compared Logistic Regression, Multinomial Naive Bayes, and Linear SVM (best model:
-______, accuracy ____%, macro F1 ____); evaluated with confusion matrices and per-class F1, and
-built an interactive Streamlit dashboard for model comparison, error analysis, and live
-predictions.
+Built an NLP text-classification pipeline on the 20 Newsgroups dataset (2,833 real posts, 5
+categories) using TF-IDF features; trained and compared Logistic Regression, Multinomial Naive
+Bayes, and Linear SVM (best: Naive Bayes, 85.8% accuracy, 0.856 macro F1); evaluated with
+confusion matrices and per-class F1, and built an interactive Streamlit dashboard for model
+comparison, error analysis, and live predictions.
 
 ## Suggested next steps
 
