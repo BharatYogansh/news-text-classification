@@ -1,5 +1,9 @@
 # News Topic Classification & Analytics Dashboard
 
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
+![scikit--learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat&logo=scikitlearn&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat&logo=streamlit&logoColor=white)
+
 Real text classification on the **20 Newsgroups** dataset (scikit-learn's built-in fetch,
 genuinely real Usenet posts, classic NLP benchmark). Compares three classifiers on the same
 TF-IDF features, evaluates each with accuracy/F1/confusion matrix, digs into what each model
