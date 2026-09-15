@@ -1,5 +1,6 @@
 # News Topic Classification & Analytics Dashboard
 
+[![Live Demo](https://img.shields.io/badge/Live_Demo-View_App-success?style=flat&logo=streamlit&logoColor=white)](https://news-text-dassification-zz2enypbudfsuvtauq4gc.streamlit.app/)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![scikit--learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat&logo=scikitlearn&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat&logo=streamlit&logoColor=white)
