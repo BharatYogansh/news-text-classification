@@ -1,7 +1,4 @@
 venv/
 __pycache__/
 *.pyc
-*.pkl
-results.json
-test_predictions.csv
 .DS_Store
